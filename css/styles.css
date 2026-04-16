@@ -1147,14 +1147,22 @@ p {
 }
 
 .result-images {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  aspect-ratio: 2 / 1;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
 }
 
 .result-images > div {
   overflow: hidden;
   position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.result-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .result-images .before-label,
