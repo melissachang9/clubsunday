@@ -1149,6 +1149,7 @@ p {
 .result-images {
   aspect-ratio: 1 / 1;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .result-images > div {

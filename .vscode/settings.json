@@ -1,5 +1,8 @@
 {
     "chat.tools.terminal.autoApprove": {
-        "textutil": true
+        "textutil": true,
+        "git add": true,
+        "git commit": true,
+        "git push": true
     }
 }
