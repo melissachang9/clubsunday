@@ -1147,16 +1147,20 @@ p {
 }
 
 .result-images {
-  aspect-ratio: 1 / 1;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
   overflow: hidden;
   border-radius: 8px;
 }
 
 .result-images > div {
-  overflow: hidden;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 .result-images img {
