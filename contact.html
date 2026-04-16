@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Sunday — Say Hello</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="Assets/Logo/CLUB SUNDAYS.png" alt="Club Sunday">
+      </a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="treatments.html">Treatments</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="shop.html" class="nav-cart" aria-label="Cart"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg><span class="cart-count" style="display:none;">0</span></a></li>
+        <li><a href="contact.html" class="btn-book">Book Now</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="about.html">About</a>
+    <a href="treatments.html">Treatments</a>
+    <a href="membership.html">Membership</a>
+    <a href="shop.html">Shop</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn-book-mobile">Book Now</a>
+  </div>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <span class="label">Say Hello</span>
+      <h1>Let's <em>Chat</em></h1>
+      <p>Questions, bookings, or just want to say hi — we're here for it.</p>
+    </div>
+  </section>
+
+  <!-- Editorial Split — Contact Intro -->
+  <section class="editorial fade-in">
+    <div class="editorial-image">
+      <img src="Assets/Images/studio-hallway.jpg" alt="Inside Club Sunday — studio hallway">
+    </div>
+    <div class="editorial-text">
+      <span class="label" style="color:var(--sage); display:block; margin-bottom:1rem;">Get in Touch</span>
+      <h2 style="color:var(--dark-green); margin-bottom:1rem;">We're Here to <em>Help</em></h2>
+      <p>Whether you're booking your first glow date, curious about membership, or just want a personalised skin consultation — reach out. No pressure, just vibes.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid fade-in">
+
+        <!-- Info -->
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <span class="label">Location</span>
+            <p>123 Sunday Lane<br>Melbourne, VIC 3000</p>
+          </div>
+          <div class="contact-info-item">
+            <span class="label">Hours</span>
+            <p>Monday – Friday: 7am – 4pm<br>Saturday – Sunday: 8am – 5pm</p>
+          </div>
+          <div class="contact-info-item">
+            <span class="label">Email</span>
+            <p>hello@clubsunday.com</p>
+          </div>
+          <div class="contact-info-item">
+            <span class="label">Phone</span>
+            <p>+61 3 1234 5678</p>
+          </div>
+          <div class="contact-info-item">
+            <span class="label">Follow Us</span>
+            <p>@clubsunday on Instagram & TikTok</p>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="general">General Inquiry</option>
+              <option value="membership">Membership</option>
+              <option value="consultation">Free Consultation</option>
+              <option value="treatment">Treatment Inquiry</option>
+              <option value="press">Press & Media</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="How can we help?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="Assets/Logo/Secondary.png" alt="Club Sunday" style="filter: brightness(0) invert(1);">
+          <p>Your skin. Your people. Your club. Advanced facials and bio-stimulatory skincare for every skin tone.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <a href="about.html">About</a>
+          <a href="treatments.html">Treatments</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="membership.html">Membership</a>
+          <a href="shop.html">Shop</a>
+          <a href="blog.html">Blog</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="https://instagram.com/TheClubSunday" target="_blank">Instagram</a>
+          <a href="https://tiktok.com/@TheClubSunday" target="_blank">TikTok</a>
+          <a href="mailto:hello@clubsunday.com">Email Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Club Sunday. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

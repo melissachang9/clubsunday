@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Sunday — The Shop</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="Assets/Logo/CLUB SUNDAYS.png" alt="Club Sunday">
+      </a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="treatments.html">Treatments</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="shop.html" class="nav-cart" aria-label="Cart"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg><span class="cart-count" style="display:none;">0</span></a></li>
+        <li><a href="contact.html" class="btn-book">Book Now</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="about.html">About</a>
+    <a href="treatments.html">Treatments</a>
+    <a href="membership.html">Membership</a>
+    <a href="shop.html">Shop</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn-book-mobile">Book Now</a>
+  </div>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <span class="label">The Shop</span>
+      <h1>Skincare That <em>Works</em></h1>
+      <p>The same products we use in your treatments — for your ritual at home.</p>
+    </div>
+  </section>
+
+  <!-- Shop Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-3 fade-in">
+
+        <!-- Product 1 -->
+        <div class="card product-card">
+          <div class="card-image" style="background-color:var(--sage);"></div>
+          <div class="card-body">
+            <span class="label">Cleanser</span>
+            <h3 style="font-size:1.1rem;">Gentle Gel Cleanser</h3>
+            <p>Daily cleanser for all skin types, 200ml</p>
+            <span class="product-price">$48.00</span>
+            <button class="btn btn-primary product-card-btn" data-add-to-cart="cleanser" data-name="Gentle Gel Cleanser" data-price="48.00">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="card product-card">
+          <div class="card-image" style="background-color:var(--dark-brown);"></div>
+          <div class="card-body">
+            <span class="label">Serum</span>
+            <h3 style="font-size:1.1rem;">Vitamin C Brightening Serum</h3>
+            <p>15% L-Ascorbic acid, antioxidant protection, 30ml</p>
+            <span class="product-price">$89.00</span>
+            <button class="btn btn-primary product-card-btn" data-add-to-cart="vitamin-c" data-name="Vitamin C Brightening Serum" data-price="89.00">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="card product-card">
+          <div class="card-image" style="background-color:var(--dark-green);"></div>
+          <div class="card-body">
+            <span class="label">Moisturiser</span>
+            <h3 style="font-size:1.1rem;">Hydra-Repair Cream</h3>
+            <p>Rich barrier-repair moisturiser with ceramides, 50ml</p>
+            <span class="product-price">$72.00</span>
+            <button class="btn btn-primary product-card-btn" data-add-to-cart="moisturiser" data-name="Hydra-Repair Cream" data-price="72.00">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="card product-card">
+          <div class="card-image" style="background-color:var(--near-black);"></div>
+          <div class="card-body">
+            <span class="label">SPF</span>
+            <h3 style="font-size:1.1rem;">Invisible Shield SPF 50+</h3>
+            <p>Lightweight, invisible UV protection for daily wear, 50ml</p>
+            <span class="product-price">$55.00</span>
+            <button class="btn btn-primary product-card-btn" data-add-to-cart="spf" data-name="Invisible Shield SPF 50+" data-price="55.00">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="card product-card">
+          <div class="card-image" style="background-color:var(--sage);"></div>
+          <div class="card-body">
+            <span class="label">Exfoliant</span>
+            <h3 style="font-size:1.1rem;">AHA/BHA Exfoliating Solution</h3>
+            <p>Resurfacing treatment for smoother, clearer skin, 30ml</p>
+            <span class="product-price">$65.00</span>
+            <button class="btn btn-primary product-card-btn" data-add-to-cart="exfoliant" data-name="AHA/BHA Exfoliating Solution" data-price="65.00">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="card product-card">
+          <div class="card-image" style="background-color:var(--dark-brown);"></div>
+          <div class="card-body">
+            <span class="label">Eye Care</span>
+            <h3 style="font-size:1.1rem;">Peptide Eye Cream</h3>
+            <p>Targets fine lines, puffiness & dark circles, 15ml</p>
+            <span class="product-price">$78.00</span>
+            <button class="btn btn-primary product-card-btn" data-add-to-cart="eye-cream" data-name="Peptide Eye Cream" data-price="78.00">Add to Cart</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Members CTA -->
+  <section class="section bg-green">
+    <div class="container text-center fade-in">
+      <span class="label" style="color:var(--sage); display:block; margin-bottom:1rem;">Club Perks</span>
+      <h2 style="color:var(--off-white); margin-bottom:1rem;">Members Save Up to <em>20%</em></h2>
+      <p style="color:rgba(255,254,251,0.7); margin:0 auto 2rem;">Join the club and unlock exclusive discounts on every treatment and product. Your skin — and your wallet — will thank you.</p>
+      <a href="membership.html" class="btn btn-light">Join the Club</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="Assets/Logo/Secondary.png" alt="Club Sunday" style="filter: brightness(0) invert(1);">
+          <p>Your skin. Your people. Your club. Advanced facials and bio-stimulatory skincare for every skin tone.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <a href="about.html">About</a>
+          <a href="treatments.html">Treatments</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="membership.html">Membership</a>
+          <a href="shop.html">Shop</a>
+          <a href="blog.html">Blog</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="https://instagram.com/TheClubSunday" target="_blank">Instagram</a>
+          <a href="https://tiktok.com/@TheClubSunday" target="_blank">TikTok</a>
+          <a href="mailto:hello@clubsunday.com">Email Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Club Sunday. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
