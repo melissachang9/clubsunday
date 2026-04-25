@@ -836,6 +836,123 @@ p {
   .math-total { font-size: 1.15rem; }
 }
 
+/* --- Membership Hero (sales-focused) --- */
+.membership-hero {
+  padding: 9rem 0 5rem;
+}
+
+.hero-ctas {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0 1.5rem;
+}
+
+.btn-outline-light {
+  background-color: transparent;
+  color: var(--off-white);
+  border-color: rgba(255, 254, 251, 0.4);
+}
+
+.btn-outline-light:hover {
+  background-color: var(--off-white);
+  color: var(--dark-green);
+  border-color: var(--off-white);
+}
+
+.founder-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: rgba(255, 254, 251, 0.85);
+  padding: 0.55rem 1.15rem;
+  border: 1px solid rgba(255, 254, 251, 0.25);
+  border-radius: 100px;
+  margin-top: 0.5rem;
+}
+
+.founder-badge .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--sage);
+  display: inline-block;
+}
+
+.founder-badge strong {
+  color: var(--off-white);
+  font-weight: 500;
+}
+
+/* --- Trust row under tiers --- */
+.trust-row {
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.03em;
+  opacity: 0.55;
+  margin: 2.5rem auto 0;
+}
+
+/* --- Social proof strip --- */
+.social-proof-strip {
+  background-color: #f5f3ef;
+  padding: 4rem 0;
+  border-top: 1px solid rgba(31, 31, 28, 0.05);
+  border-bottom: 1px solid rgba(31, 31, 28, 0.05);
+}
+
+/* --- Math card highlight --- */
+.math-card-highlight {
+  border-color: var(--dark-green);
+  border-width: 1.5px;
+  position: relative;
+  box-shadow: 0 8px 30px rgba(1, 48, 30, 0.08);
+}
+
+/* --- Final CTA --- */
+.final-cta {
+  background-color: var(--dark-brown);
+  color: var(--off-white);
+  padding: 5rem 0;
+}
+
+.final-cta .label {
+  color: var(--sage);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.final-cta h2 {
+  color: var(--off-white);
+}
+
+.final-cta p {
+  color: rgba(255, 254, 251, 0.7);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.final-cta .btn-primary {
+  background-color: var(--sage);
+  color: var(--dark-green);
+  border-color: var(--sage);
+}
+
+.final-cta .btn-primary:hover {
+  background-color: transparent;
+  color: var(--sage);
+}
+
+@media (max-width: 768px) {
+  .membership-hero { padding: 7rem 0 4rem; }
+  .hero-ctas { flex-direction: column; width: 100%; }
+  .hero-ctas .btn { width: 100%; }
+}
+
 /* --- Blog Cards --- */
 .blog-card .card-body {
   padding: 1.5rem;
