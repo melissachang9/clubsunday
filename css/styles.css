@@ -897,6 +897,17 @@ p {
   margin: 2.5rem auto 0;
 }
 
+/* --- Results disclaimer (membership) --- */
+.results-disclaimer {
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin: 2.5rem auto 0;
+}
+
 /* --- Social proof strip --- */
 .social-proof-strip {
   background-color: #f5f3ef;
