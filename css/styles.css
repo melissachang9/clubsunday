@@ -696,6 +696,146 @@ p {
   margin-top: 1rem;
 }
 
+.tier-tagline {
+  font-size: 0.85rem;
+  opacity: 0.65;
+  margin: 0 auto 1.25rem;
+  min-height: 2.5em;
+}
+
+.tier-card.featured .tier-tagline {
+  color: rgba(255, 254, 251, 0.75);
+  opacity: 1;
+}
+
+.tier-future {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  opacity: 0.55;
+  margin-bottom: 0.5rem;
+}
+
+.tier-card.featured .tier-future {
+  color: rgba(255, 254, 251, 0.6);
+  opacity: 1;
+}
+
+.tier-card ul li.muted-li {
+  opacity: 0.4;
+}
+
+/* --- Math Cards (Membership) --- */
+.math-card {
+  background-color: var(--off-white);
+  border: 1px solid rgba(31, 31, 28, 0.1);
+  padding: 2rem;
+  text-align: left;
+}
+
+.math-card .label {
+  display: block;
+  color: var(--sage);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid rgba(31, 31, 28, 0.08);
+}
+
+.math-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.55rem 0;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(31, 31, 28, 0.05);
+}
+
+.math-row:last-of-type {
+  border-bottom: none;
+}
+
+.math-row .val {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  color: var(--dark-green);
+}
+
+.math-row .muted {
+  opacity: 0.5;
+}
+
+.math-row .included {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  color: var(--dark-green);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.math-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  margin-top: 0.5rem;
+  border-top: 1px solid rgba(31, 31, 28, 0.15);
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--dark-green);
+}
+
+.math-savings {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.save-pill {
+  background-color: var(--sage);
+  color: var(--dark-green);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.3rem 0.75rem;
+  border-radius: 100px;
+}
+
+.math-note {
+  text-align: center;
+  font-size: 0.8rem;
+  opacity: 0.6;
+  margin: 2rem auto 0;
+  max-width: 720px;
+}
+
+/* --- Member Perk Cards --- */
+.perk-card {
+  background-color: var(--off-white);
+  border: 1px solid rgba(31, 31, 28, 0.08);
+  padding: 2rem;
+}
+
+.perk-card h4 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  color: var(--dark-green);
+  margin-bottom: 0.6rem;
+}
+
+.perk-card p {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .math-total { font-size: 1.15rem; }
+}
+
 /* --- Blog Cards --- */
 .blog-card .card-body {
   padding: 1.5rem;
