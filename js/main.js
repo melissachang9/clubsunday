@@ -140,4 +140,54 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // --- Shop Filters ---
+  const productGrid = document.getElementById('product-grid');
+  if (productGrid) {
+    const products = productGrid.querySelectorAll('.product-card');
+    const visibleCount = document.getElementById('visible-count');
+    const emptyState = document.getElementById('empty-state');
+    const resetBtn = document.getElementById('reset-filters');
+    const activeFilters = { skin: 'all', category: 'all' };
+
+    const applyFilters = () => {
+      let count = 0;
+      products.forEach(card => {
+        const skin = (card.dataset.skin || '').split(' ');
+        const category = card.dataset.category || '';
+        const skinMatch = activeFilters.skin === 'all' || skin.includes(activeFilters.skin);
+        const categoryMatch = activeFilters.category === 'all' || category === activeFilters.category;
+        const show = skinMatch && categoryMatch;
+        card.style.display = show ? '' : 'none';
+        if (show) count++;
+      });
+      if (visibleCount) visibleCount.textContent = count;
+      if (emptyState) emptyState.style.display = count === 0 ? 'block' : 'none';
+      productGrid.style.display = count === 0 ? 'none' : '';
+    };
+
+    document.querySelectorAll('.filter-chips').forEach(group => {
+      const groupName = group.dataset.filterGroup;
+      group.querySelectorAll('.filter-chip').forEach(chip => {
+        chip.addEventListener('click', () => {
+          group.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+          activeFilters[groupName] = chip.dataset.filter;
+          applyFilters();
+        });
+      });
+    });
+
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        activeFilters.skin = 'all';
+        activeFilters.category = 'all';
+        document.querySelectorAll('.filter-chips').forEach(group => {
+          group.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+          group.querySelector('[data-filter="all"]').classList.add('active');
+        });
+        applyFilters();
+      });
+    }
+  }
+
 });

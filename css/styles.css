@@ -908,6 +908,100 @@ p {
   margin: 2.5rem auto 0;
 }
 
+/* --- Shop Filters --- */
+.shop-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.75rem 2rem;
+  background-color: var(--off-white);
+  border: 1px solid rgba(31, 31, 28, 0.08);
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.filter-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--sage);
+  min-width: 80px;
+  margin-right: 0.5rem;
+}
+
+.filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter-chip {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  color: var(--near-black);
+  border: 1px solid rgba(31, 31, 28, 0.15);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-chip:hover {
+  border-color: var(--dark-green);
+  color: var(--dark-green);
+}
+
+.filter-chip.active {
+  background-color: var(--dark-green);
+  color: var(--off-white);
+  border-color: var(--dark-green);
+}
+
+.filter-count {
+  text-align: right;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.03em;
+  opacity: 0.55;
+  margin: 1rem 0 0;
+}
+
+/* --- Product Tags --- */
+.product-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.25rem 0 0.75rem;
+}
+
+.product-tag {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.6rem;
+  background-color: rgba(182, 194, 170, 0.25);
+  color: var(--dark-green);
+  border-radius: 100px;
+}
+
+@media (max-width: 768px) {
+  .shop-filters { padding: 1.25rem 1rem; }
+  .filter-label { min-width: auto; width: 100%; margin-bottom: 0.25rem; }
+}
+
 /* --- Social proof strip --- */
 .social-proof-strip {
   background-color: #f5f3ef;

@@ -47,87 +47,225 @@
     <div class="container">
       <span class="label">The Shop</span>
       <h1>Skincare That <em>Works</em></h1>
-      <p>The same products we use in your treatments — for your ritual at home.</p>
+      <p>The same products we use in your treatments — for your ritual at home. Filter by your skin type or what you're shopping for.</p>
+    </div>
+  </section>
+
+  <!-- Shop Filters -->
+  <section class="section shop-filters-section" style="padding:3rem 0 1rem;">
+    <div class="container">
+      <div class="shop-filters fade-in">
+        <div class="filter-group">
+          <span class="filter-label">Skin Type</span>
+          <div class="filter-chips" data-filter-group="skin">
+            <button class="filter-chip active" data-filter="all">All</button>
+            <button class="filter-chip" data-filter="oily">Oily</button>
+            <button class="filter-chip" data-filter="dry">Dry</button>
+            <button class="filter-chip" data-filter="acne">Acne-Prone</button>
+            <button class="filter-chip" data-filter="mature">Mature</button>
+            <button class="filter-chip" data-filter="sensitive">Sensitive</button>
+          </div>
+        </div>
+        <div class="filter-group">
+          <span class="filter-label">Category</span>
+          <div class="filter-chips" data-filter-group="category">
+            <button class="filter-chip active" data-filter="all">All</button>
+            <button class="filter-chip" data-filter="cleanser">Cleanser</button>
+            <button class="filter-chip" data-filter="serum">Serum</button>
+            <button class="filter-chip" data-filter="moisturiser">Moisturiser</button>
+            <button class="filter-chip" data-filter="exfoliant">Exfoliant</button>
+            <button class="filter-chip" data-filter="spf">SPF</button>
+            <button class="filter-chip" data-filter="eye">Eye Care</button>
+          </div>
+        </div>
+      </div>
+      <p class="filter-count fade-in"><span id="visible-count">10</span> products</p>
     </div>
   </section>
 
   <!-- Shop Grid -->
-  <section class="section">
+  <section class="section" style="padding-top:2rem;">
     <div class="container">
-      <div class="grid grid-3 fade-in">
+      <div class="grid grid-3 fade-in" id="product-grid">
 
-        <!-- Product 1 -->
-        <div class="card product-card">
+        <!-- Cleansers -->
+        <div class="card product-card" data-category="cleanser" data-skin="all dry sensitive mature">
           <div class="card-image" style="background-color:var(--sage);"></div>
           <div class="card-body">
             <span class="label">Cleanser</span>
             <h3 style="font-size:1.1rem;">Gentle Gel Cleanser</h3>
-            <p>Daily cleanser for all skin types, 200ml</p>
+            <p>Daily cleanser for normal to dry skin, 200ml</p>
+            <div class="product-tags">
+              <span class="product-tag">Dry</span>
+              <span class="product-tag">Sensitive</span>
+              <span class="product-tag">Mature</span>
+            </div>
             <span class="product-price">$48.00</span>
             <button class="btn btn-primary product-card-btn" data-add-to-cart="cleanser" data-name="Gentle Gel Cleanser" data-price="48.00">Add to Cart</button>
           </div>
         </div>
 
-        <!-- Product 2 -->
-        <div class="card product-card">
+        <div class="card product-card" data-category="cleanser" data-skin="all oily acne">
+          <div class="card-image" style="background-color:var(--dark-green);"></div>
+          <div class="card-body">
+            <span class="label">Cleanser</span>
+            <h3 style="font-size:1.1rem;">Salicylic Clarifying Cleanser</h3>
+            <p>2% salicylic acid foaming cleanser for breakouts and oil control, 200ml</p>
+            <div class="product-tags">
+              <span class="product-tag">Oily</span>
+              <span class="product-tag">Acne-Prone</span>
+            </div>
+            <span class="product-price">$52.00</span>
+            <button class="btn btn-primary product-card-btn" data-add-to-cart="salicylic-cleanser" data-name="Salicylic Clarifying Cleanser" data-price="52.00">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Serums -->
+        <div class="card product-card" data-category="serum" data-skin="all dry mature">
           <div class="card-image" style="background-color:var(--dark-brown);"></div>
           <div class="card-body">
             <span class="label">Serum</span>
             <h3 style="font-size:1.1rem;">Vitamin C Brightening Serum</h3>
-            <p>15% L-Ascorbic acid, antioxidant protection, 30ml</p>
+            <p>15% L-Ascorbic acid for radiance and antioxidant protection, 30ml</p>
+            <div class="product-tags">
+              <span class="product-tag">Dry</span>
+              <span class="product-tag">Mature</span>
+            </div>
             <span class="product-price">$89.00</span>
             <button class="btn btn-primary product-card-btn" data-add-to-cart="vitamin-c" data-name="Vitamin C Brightening Serum" data-price="89.00">Add to Cart</button>
           </div>
         </div>
 
-        <!-- Product 3 -->
-        <div class="card product-card">
+        <div class="card product-card" data-category="serum" data-skin="all dry sensitive mature">
+          <div class="card-image" style="background-color:var(--sage);"></div>
+          <div class="card-body">
+            <span class="label">Serum</span>
+            <h3 style="font-size:1.1rem;">Hyaluronic Hydration Serum</h3>
+            <p>Multi-weight hyaluronic acid for deep, lasting hydration, 30ml</p>
+            <div class="product-tags">
+              <span class="product-tag">Dry</span>
+              <span class="product-tag">Sensitive</span>
+              <span class="product-tag">Mature</span>
+            </div>
+            <span class="product-price">$76.00</span>
+            <button class="btn btn-primary product-card-btn" data-add-to-cart="hyaluronic" data-name="Hyaluronic Hydration Serum" data-price="76.00">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="card product-card" data-category="serum" data-skin="all oily acne">
+          <div class="card-image" style="background-color:var(--near-black);"></div>
+          <div class="card-body">
+            <span class="label">Serum</span>
+            <h3 style="font-size:1.1rem;">Niacinamide 10% Serum</h3>
+            <p>Balances oil, refines pores, and calms breakouts, 30ml</p>
+            <div class="product-tags">
+              <span class="product-tag">Oily</span>
+              <span class="product-tag">Acne-Prone</span>
+            </div>
+            <span class="product-price">$58.00</span>
+            <button class="btn btn-primary product-card-btn" data-add-to-cart="niacinamide" data-name="Niacinamide 10% Serum" data-price="58.00">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="card product-card" data-category="serum" data-skin="all mature">
+          <div class="card-image" style="background-color:var(--dark-brown);"></div>
+          <div class="card-body">
+            <span class="label">Serum</span>
+            <h3 style="font-size:1.1rem;">Retinol Renewal Serum</h3>
+            <p>0.3% encapsulated retinol for firmness and fine line repair, 30ml</p>
+            <div class="product-tags">
+              <span class="product-tag">Mature</span>
+            </div>
+            <span class="product-price">$95.00</span>
+            <button class="btn btn-primary product-card-btn" data-add-to-cart="retinol" data-name="Retinol Renewal Serum" data-price="95.00">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Moisturisers -->
+        <div class="card product-card" data-category="moisturiser" data-skin="all dry sensitive mature">
           <div class="card-image" style="background-color:var(--dark-green);"></div>
           <div class="card-body">
             <span class="label">Moisturiser</span>
             <h3 style="font-size:1.1rem;">Hydra-Repair Cream</h3>
             <p>Rich barrier-repair moisturiser with ceramides, 50ml</p>
+            <div class="product-tags">
+              <span class="product-tag">Dry</span>
+              <span class="product-tag">Sensitive</span>
+              <span class="product-tag">Mature</span>
+            </div>
             <span class="product-price">$72.00</span>
             <button class="btn btn-primary product-card-btn" data-add-to-cart="moisturiser" data-name="Hydra-Repair Cream" data-price="72.00">Add to Cart</button>
           </div>
         </div>
 
-        <!-- Product 4 -->
-        <div class="card product-card">
+        <div class="card product-card" data-category="moisturiser" data-skin="all oily acne">
+          <div class="card-image" style="background-color:var(--sage);"></div>
+          <div class="card-body">
+            <span class="label">Moisturiser</span>
+            <h3 style="font-size:1.1rem;">Featherweight Gel Moisturiser</h3>
+            <p>Oil-free, non-comedogenic hydration with zinc and green tea, 50ml</p>
+            <div class="product-tags">
+              <span class="product-tag">Oily</span>
+              <span class="product-tag">Acne-Prone</span>
+            </div>
+            <span class="product-price">$62.00</span>
+            <button class="btn btn-primary product-card-btn" data-add-to-cart="gel-moisturiser" data-name="Featherweight Gel Moisturiser" data-price="62.00">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- SPF -->
+        <div class="card product-card" data-category="spf" data-skin="all oily dry acne mature sensitive">
           <div class="card-image" style="background-color:var(--near-black);"></div>
           <div class="card-body">
             <span class="label">SPF</span>
             <h3 style="font-size:1.1rem;">Invisible Shield SPF 50+</h3>
             <p>Lightweight, invisible UV protection for daily wear, 50ml</p>
+            <div class="product-tags">
+              <span class="product-tag">All Skin Types</span>
+            </div>
             <span class="product-price">$55.00</span>
             <button class="btn btn-primary product-card-btn" data-add-to-cart="spf" data-name="Invisible Shield SPF 50+" data-price="55.00">Add to Cart</button>
           </div>
         </div>
 
-        <!-- Product 5 -->
-        <div class="card product-card">
+        <!-- Exfoliant -->
+        <div class="card product-card" data-category="exfoliant" data-skin="all oily acne mature">
           <div class="card-image" style="background-color:var(--sage);"></div>
           <div class="card-body">
             <span class="label">Exfoliant</span>
             <h3 style="font-size:1.1rem;">AHA/BHA Exfoliating Solution</h3>
             <p>Resurfacing treatment for smoother, clearer skin, 30ml</p>
+            <div class="product-tags">
+              <span class="product-tag">Oily</span>
+              <span class="product-tag">Acne-Prone</span>
+              <span class="product-tag">Mature</span>
+            </div>
             <span class="product-price">$65.00</span>
             <button class="btn btn-primary product-card-btn" data-add-to-cart="exfoliant" data-name="AHA/BHA Exfoliating Solution" data-price="65.00">Add to Cart</button>
           </div>
         </div>
 
-        <!-- Product 6 -->
-        <div class="card product-card">
+        <!-- Eye Care -->
+        <div class="card product-card" data-category="eye" data-skin="all mature dry">
           <div class="card-image" style="background-color:var(--dark-brown);"></div>
           <div class="card-body">
             <span class="label">Eye Care</span>
             <h3 style="font-size:1.1rem;">Peptide Eye Cream</h3>
-            <p>Targets fine lines, puffiness & dark circles, 15ml</p>
+            <p>Targets fine lines, puffiness &amp; dark circles, 15ml</p>
+            <div class="product-tags">
+              <span class="product-tag">Mature</span>
+              <span class="product-tag">Dry</span>
+            </div>
             <span class="product-price">$78.00</span>
             <button class="btn btn-primary product-card-btn" data-add-to-cart="eye-cream" data-name="Peptide Eye Cream" data-price="78.00">Add to Cart</button>
           </div>
         </div>
 
+      </div>
+
+      <div class="empty-state fade-in" id="empty-state" style="display:none; text-align:center; padding:4rem 0;">
+        <p style="opacity:0.6;">No products match those filters.</p>
+        <button class="btn btn-secondary" id="reset-filters" style="margin-top:1rem;">Reset Filters</button>
       </div>
     </div>
   </section>
