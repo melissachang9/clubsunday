@@ -861,32 +861,6 @@ p {
   border-color: var(--off-white);
 }
 
-.founder-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: rgba(255, 254, 251, 0.85);
-  padding: 0.55rem 1.15rem;
-  border: 1px solid rgba(255, 254, 251, 0.25);
-  border-radius: 100px;
-  margin-top: 0.5rem;
-}
-
-.founder-badge .dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background-color: var(--sage);
-  display: inline-block;
-}
-
-.founder-badge strong {
-  color: var(--off-white);
-  font-weight: 500;
-}
-
 /* --- Trust row under tiers --- */
 .trust-row {
   text-align: center;
